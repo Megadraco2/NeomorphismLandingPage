@@ -1,0 +1,126 @@
+*{
+    font-family: Bahnschrift;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #e3edf7;
+}
+.box {
+    color: black;
+    width: 450px;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    font-family: 'century gothic', sans-serif;
+    border-radius: 10px;
+    
+    box-shadow: 6px 6px 10px -1px rgba( 0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba( 255, 255, 255, 0.7);
+}
+.box-img {
+    border: 8px solid #e3edf7;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 6px 6px 10px -1px rgba( 0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba( 255, 255, 255, 0.7);
+}
+.box h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight:bold;
+}
+.box h5 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.box p {
+    font-size: 18px;
+    text-align:start;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-shadow: none;
+    display: flex;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 15px;
+    background: #e3edf7;
+    color: #777;
+    text-decoration: none;
+    font-size: 60px;
+    border: 1px solid rgba( 0, 0, 0, 0);
+    box-shadow: 6px 6px 10px -1px rgba( 0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba( 255, 255, 255, 0.7);
+    transition: transform 0.5s;
+}
+a i {
+    transition: transform 0.5s;
+}
+.box li {
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+.box li a:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba( 0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba( 255, 255, 255, 0.7),
+    -0.5px -0.5px 0 rgba( 255, 255, 255, 1),
+    0.5px 0.5px 0 rgba( 0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba( 0, 0, 0, 0.05);
+
+    border: 1px solid rgba( 0, 0, 0, 0.1);
+
+    transform: translateY(3px);
+}
+a:hover i {
+    transform: scale(0.90);
+}
+
+a:hover .fa-facebook{
+    color: #3b5998;
+}
+
+a:hover .fa-instagram{
+    color: #6e5494;
+}
+
+a:hover .fa-github{
+    color: #333;
+}
+
+a:hover .fa-linkedin {
+    color: #0e76a8;
+}
+
+.typing {
+    position: relative;
+    margin-left: 10px;
+}
+
+.typing::after{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 1px;
+    height: 15px;
+    border-right: 3px solid black;
+    animation: blink 0.7s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
